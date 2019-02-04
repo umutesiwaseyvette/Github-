@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+button{
+    padding: 10px 10px;
+    color:#051838;
+    background-color: aquamarine;
+}
+input{
+    padding: 10px 10px;
+    margin: 10px;
+    text-align: center;
+}
+label{
+    background-color: bisque;
+    padding: 10px 10px;
+    margin: 10px;
+}
