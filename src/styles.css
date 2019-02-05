@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 button{
     padding: 10px 10px;
-    color:#051838;
-    background-color: rgb(85, 104, 86);
+    margin: 10px;
+    color:#052153;
+    background-color: rgb(240, 220, 195);
 }
 input{
     padding: 10px 10px;
@@ -19,5 +20,5 @@ body{
     text-align: center;
 }
 h1{
-    color: white;
+    color: rgb(5, 17, 82);
 }
