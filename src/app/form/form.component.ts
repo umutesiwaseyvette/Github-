@@ -3,19 +3,21 @@ import { User } from '../user';
 import {HttpClient} from '@angular/common/http'
 import { environment } from 'src/environments/environment';
 import { Repository } from '../repository';
+import {ServiceService} from'../service.service';
 
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css'],
+  providers:[ServiceService]
 })
-export class GitformComponent implements OnInit {
+export class formComponent implements OnInit {
 
-  username= new User("");
-  repos=new Repository("",0,new Date(),"");
+  username= new User("",'');
+  repos=new Repository("",0,"");
   constructor(private http:HttpClient) { 
-    this.repos=new Repository("",0,new Date(),"");
+    this.repos=new Repository("",0,"");
     }
   Check(){
     interface ApiResponse{
@@ -30,7 +32,6 @@ export class GitformComponent implements OnInit {
       // console.log(data);
       this.repos.name= data.name;
       this.repos.public_repos=data.public_repos;
-      this.repos.created_at=data.created_at;
       this.repos.followers=data.followers;
     });
   }
