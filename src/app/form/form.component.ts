@@ -13,6 +13,10 @@ import {ServiceService} from'../service.service';
   providers:[ServiceService]
 })
 export class formComponent implements OnInit {
+  submitSearch(name) {
+    this.ServiceService .getProfileInfo(name.target.value);
+    this. Repository.getRepoInfo(name.target.value);
+  }
 
   username= new User("",'');
   repos=new Repository("",0,"");
