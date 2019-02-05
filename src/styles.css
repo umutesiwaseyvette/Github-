@@ -2,7 +2,7 @@
 button{
     padding: 10px 10px;
     color:#051838;
-    background-color: aquamarine;
+    background-color: rgb(100, 177, 107);
 }
 input{
     padding: 10px 10px;
@@ -10,7 +10,11 @@ input{
     text-align: center;
 }
 label{
-    background-color: bisque;
+    background-color: rgb(209, 195, 178);
     padding: 10px 10px;
     margin: 10px;
+}
+body{
+    background-color: #cdd1d6;
+    text-align: center;
 }
