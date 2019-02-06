@@ -6,6 +6,10 @@ Github Search
 
 UMUTESIWASE Yvette
 
+## BDD
+
+ This project search for numbers of repository of the username you entred and also search for the followers.
+
 ## Description
 
 This project was generated with [Angular CLI]
