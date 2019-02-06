@@ -18,9 +18,18 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/
 
 Run ng generate component component-name to generate a new component
 
-## Technologies Used
+## Set up instruction
+* Visual studio code
+* Github
+* Google chrome
+* Ubuntu OS
 
-* Angular JS
+## Technologies Used
+* HTML
+* CSS
+* JS
+* README
+* Angular CLI
 * To find it click on this link:
 
 ## Running unit tests
