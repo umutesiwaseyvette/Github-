@@ -3,26 +3,28 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dqnkNG1kh_er_ikWW2UYiyup3JjPyoodFyDeDumLq7zjwN8yTQ" alt="Image result for github" width="530" height="300" style="margin-top: 160px;">
   <div class="row">
       <div class="col-md-6">
-    <form (ngSubmit)="Check()">
+    <form (ngSubmit)="Check(username.value)">
       <div class="form-group">
           <h1>Github Search</h1> 
         <label for="name">UserName</label>
-        <input type="text" required class="form-control" id="name">
+        <input type="text" required class="form-control" id="name" #username >
       </div>
-      <a href="{{user.html_url}}" class="btn btn-success" id="view">Search</a>
+      <button type="submit" class="btn btn-success" id="view">Search</button>
+      <!-- <a href="{{user.html_url}}" class="btn btn-success" id="view">Search</a> -->
     </form>
   </div>
   <div class="col-md-6">
     <table>
       <tr>
         <td >Github username: </td>
-        <td class="label">{{user.username}}</td>
+        <td class="label">{{public_repos.name}}</td>
       </tr>
       <tr>
         <td >Repositories: </td>
-        <td class="label">{{repository.public_repos}}</td>
+        <td class="label">{{public_repos.public_repos}}</td>
       </tr>
       </table>
+      <a href="{{repos.html_url}}"> view repos</a>
   </div>
 </div>
 </div>
