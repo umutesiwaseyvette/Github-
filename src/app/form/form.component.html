@@ -1,10 +1,10 @@
+<body>
 <div class="container">
+    <img class="irc_mut" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dqnkNG1kh_er_ikWW2UYiyup3JjPyoodFyDeDumLq7zjwN8yTQ" alt="Image result for github" width="530" height="300" style="margin-top: 160px;">
   <div class="row">
       <div class="col-md-6">
-    <form>
+    <form (ngSubmit)="Check()">
       <div class="form-group">
-        <h1>My Profile picture</h1>
-          <img class="spotlight" alt="Image may contain: 2 people, including Jhon Bobo Ye, people smiling" aria-busy="false" src="https://scontent.fkgl1-1.fna.fbcdn.net/v/t1.0-9/36359621_10212149878728269_2244639055230795776_n.jpg?_nc_cat=104&amp;_nc_ht=scontent.fkgl1-1.fna&amp;oh=a62ab7d0bdc4c544e6dfa87f3038e4a3&amp;oe=5CEA9939" style="width: 300px; height: 300px;"> <br>
           <h1>Github Search</h1> 
         <label for="name">UserName</label>
         <input type="text" required class="form-control" id="name">
@@ -20,9 +20,10 @@
         </tr>
         <tr>
           <td >Repositories: </td>
-          <td class="label">{{user.public_repos}}</td>
+          <td class="label">{{repository.public_repos}}</td>
         </tr>
         </table>
     </div>
   </div>
 </div>
+</body>
