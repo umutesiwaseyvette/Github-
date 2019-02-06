@@ -34,7 +34,8 @@ Run ng generate component component-name to generate a new component
 * JS
 * README
 * Angular CLI
-* To find it click on this link:
+
+* To find it click on this link:https://umutesiwaseyvette.github.io/Github-/
 
 ## Running unit tests
 

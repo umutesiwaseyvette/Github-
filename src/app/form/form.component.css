@@ -24,3 +24,12 @@ h1{
 table{
     margin-left: 20px;
 }
+td{
+    color:#06368f; 
+    padding: 10px 10px;
+    margin:10px;
+    font-style: italic;
+}
+label{
+    color: rgb(28, 6, 80); 
+}
