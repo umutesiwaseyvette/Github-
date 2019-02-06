@@ -14,10 +14,13 @@ label{
     padding: 10px 10px;
     margin: 10px;
 }
-body{
-    background-color:	rgba(131, 74, 74, 0.568);
+.container{
+    background-color:	rgba(105, 61, 61, 0.568);
     text-align: center;
 }
 h1{
     color: rgb(5, 17, 82);
+}
+table{
+    margin-left: 20px;
 }
