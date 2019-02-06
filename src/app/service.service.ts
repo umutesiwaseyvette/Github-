@@ -43,7 +43,7 @@ export class ServiceService {
 
   }
   const promise = new Promise((resolve, reject) => {
-    this.http.get<ApiResponse>('https://api.github.com/users/' + username + "b9fc7ad7493527d9ae03754c2d2728bc8f705c55").toPromise().then(profile => {
+    this.http.get<ApiResponse>('https://api.github.com/users/' + username + "?access_token=b9fc7ad7493527d9ae03754c2d2728bc8f705c55").toPromise().then(profile => {
         //  this.user.name = profile.name;
         this.user.username = profile.username;
         // this.user.avatar_url = profile.avatar_url;
@@ -68,7 +68,7 @@ getRepoInfo(username) {
     html_url: string;
     clone_url: string;
 }
-this.http.get<ApiResponse>(environment.apiUrl + username + environment.api_key).subscribe(response => {
+this.http.get<ApiResponse>('https://api.github.com/users/' + username + "?access_token=b9fc7ad7493527d9ae03754c2d2728bc8f705c55").subscribe(response => {
   
     this.items = response;  
   });
